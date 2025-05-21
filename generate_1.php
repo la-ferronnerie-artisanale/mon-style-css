@@ -1,18 +1,18 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-header("Access-Control-Allow-Methods: POST, GET");
+header("Access-Control-Allow-Methods: GET, POST");
 header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
-// Vérification de la méthode de requête
-if ($_SERVER["REQUEST_METHOD"] !== "POST" && $_SERVER["REQUEST_METHOD"] !== "GET") {
+// Vérifier la méthode de requête
+if ($_SERVER["REQUEST_METHOD"] !== "GET") {
     echo json_encode(["error" => "Méthode non autorisée"]);
     exit;
 }
 
-// Récupération des données (POST ou GET)
-$prompt = isset($_POST["prompt"]) ? trim($_POST["prompt"]) : (isset($_GET["prompt"]) ? trim($_GET["prompt"]) : "");
-$style = isset($_POST["style"]) ? trim($_POST["style"]) : (isset($_GET["style"]) ? trim($_GET["style"]) : "");
+// Récupération des paramètres via GET
+$prompt = isset($_GET["prompt"]) ? trim($_GET["prompt"]) : "";
+$style = isset($_GET["style"]) ? trim($_GET["style"]) : "Standard";
 
 // Vérification des paramètres
 if (empty($prompt)) {
@@ -20,9 +20,9 @@ if (empty($prompt)) {
     exit;
 }
 
-// Simule une réponse IA (à remplacer par une vraie API)
-$response = "Votre création : " . $prompt . " | Style : " . ($style ?: "Standard");
+// Simuler une réponse IA
+$response = "Votre création : " . $prompt . " | Style : " . $style;
 
-// Envoi de la réponse JSON
+// Envoi de la réponse JSON propre
 echo json_encode(["response" => $response]);
 ?>
