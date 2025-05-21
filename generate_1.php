@@ -5,19 +5,16 @@ header("Access-Control-Allow-Headers: Content-Type");
 header("Content-Type: application/json");
 
 // Vérification de la méthode de requête
-if ($_SERVER["REQUEST_METHOD"] !== "POST") {
-    echo json_encode(["error" => "Utilisez une requête POST"]);
+if ($_SERVER["REQUEST_METHOD"] !== "POST" && $_SERVER["REQUEST_METHOD"] !== "GET") {
+    echo json_encode(["error" => "Méthode non autorisée"]);
     exit;
 }
 
-// Récupération des données JSON envoyées
-$inputJSON = file_get_contents("php://input");
-$input = json_decode($inputJSON, true);
+// Récupération des données (POST ou GET)
+$prompt = isset($_POST["prompt"]) ? trim($_POST["prompt"]) : (isset($_GET["prompt"]) ? trim($_GET["prompt"]) : "");
+$style = isset($_POST["style"]) ? trim($_POST["style"]) : (isset($_GET["style"]) ? trim($_GET["style"]) : "");
 
 // Vérification des paramètres
-$prompt = trim($input["prompt"] ?? "");
-$style = trim($input["style"] ?? "");
-
 if (empty($prompt)) {
     echo json_encode(["error" => "Le prompt est requis"]);
     exit;
