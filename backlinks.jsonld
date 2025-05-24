@@ -1,0 +1,63 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "Portail en fer forgé artisanal",
+  "url": "https://portail-ferforge.blogspot.com/p/portails-en-fer-forge-artisanal.html",
+  "description": "Découvrez les plus beaux portails en fer forgé artisanal, fabriqués sur mesure pour une qualité exceptionnelle.",
+  "author": {
+    "@type": "Organization",
+    "name": "La Ferronnerie Artisanale"
+  },
+  "image": [
+    "https://portailsferforge.wordpress.com/wp-content/uploads/2025/04/portail-fer-forge-aquitaine-fr.jpg?w=1024",
+    "https://portailsferforge.wordpress.com/wp-content/uploads/2025/04/portail-fer-forge-portail-fer-forge-1.jpg?w=768",
+    "https://portailsferforge.wordpress.com/wp-content/uploads/2025/04/portail-fer-forge-poitou-Charentes-1.jpg?w=1024"
+  ],
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://www.google.com/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "hasPart": [
+    {
+      "@type": "WebPage",
+      "url": "https://www.bbc.com/news",
+      "name": "BBC News"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.france24.com/fr/",
+      "name": "France 24"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.tf1.fr/",
+      "name": "TF1"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.pinterest.com/",
+      "name": "Pinterest"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.reddit.com/",
+      "name": "Reddit"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.instagram.com/",
+      "name": "Instagram"
+    },
+    {
+      "@type": "WebPage",
+      "url": "https://www.tiktok.com/",
+      "name": "TikTok"
+    }
+  ],
+  "sameAs": [
+    "https://twitter.com/toncompte",
+    "https://www.linkedin.com/in/tonprofil",
+    "https://www.tiktok.com/@tonpseudo"
+  ]
+}
