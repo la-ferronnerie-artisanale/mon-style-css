@@ -479,7 +479,7 @@ body {
   cursor: pointer;
   padding: 5px 8px;
   transition: background .2s;
-  transform: translateX(-10px);
+  transform: translateX(-30px);
 }
 .selected-language-pro:hover {
   background: #0000FF22;
