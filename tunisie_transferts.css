@@ -119,6 +119,7 @@
   box-shadow: 0 1px 4px #0001;
 }
 .transfert-btn:hover { background: #127a4a; }
+
 .transfert-switch {
   display: flex;
   align-items: center;
@@ -451,8 +452,8 @@ body {
     font-size: 22px;
     font-weight: bold;
     color: #0000FF;
-    margin-left: 5px;  /* réduit */
-    margin-right: 5px; /* réduit */
+    margin-left: 5px;  /* CORRIGÉ */
+    margin-right: 5px; /* CORRIGÉ */
     letter-spacing: .5px;
   }
   .nav-brand-1 img {
@@ -461,7 +462,7 @@ body {
   }
 }
 
-/* LANG SELECTOR (TOUJOURS VISIBLES ET ALIGNÉS) */
+/* LANG SELECTOR - DRAPEAUX TOUJOURS VISIBLES ET ALIGNÉS */
 .language-selector-pro {
   position: relative;
   display: flex !important;
@@ -521,7 +522,7 @@ body {
   background: #f0f0f0;
 }
 
-/* NAVIGATION MOBILE : languages toujours visibles */
+/* NAVIGATION MOBILE : LANGUES TOUJOURS VISIBLES */
 @media (max-width: 768px) {
   .language-selector-pro {
     display: flex !important;
