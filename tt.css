@@ -1,0 +1,245 @@
+
+.services-section {
+  background: linear-gradient(#a2dff7, #d0ebff, #f8faff, #a2dff7, #a2dff7, #00a4e4, #00a4e4, #0076c0, #e0cda9, #e0cda9, #e0cda9, #e0cda9, #e0cda9);
+  margin: 0;
+  padding: 0;
+  height: 420px;
+  transform: translateY(-20px);
+}
+
+.services-slider {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  overflow: visible;
+}
+
+.service-card {
+  background: none;
+  border: none;
+  text-align: center;
+  flex: 1 1 0;
+  padding: 0 10px;
+}
+
+.service-icon,
+.service-icon-1 {
+  width: 82px;
+  height: 82px;
+  margin: 0 auto -2px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-title {
+  font-weight: bold;
+  font-size: 1.15em;
+  margin: 8px 0;
+  line-height: 1.2;
+}
+
+.service-desc {
+  color: #444;
+  font-size: 1em;
+  margin-bottom: 10px;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.service-1 {
+  width: 250px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.service-2 {
+  width: 18px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.service-3 {
+  width: 18px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+.service-4 {
+  width: 18px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .services-slider {
+    display: block;
+    max-width: 100vw;
+    position: relative;
+    transform: translateY(200px);
+    z-index: 1;
+  }
+
+  .service-card {
+    width: 95vw;
+    margin: 0 auto;
+    display: none;
+    opacity: 0;
+    position: relative;
+    z-index: 10;
+  }
+
+  .service-card.active {
+    display: block;
+    opacity: 1;
+  }
+
+  .service-title {
+    font-weight: bold;
+    font-size: 1.15em;
+    margin: 8px 0;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .service-desc {
+    color: #444;
+    font-size: 1em;
+    margin-bottom: 10px;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .service-icon,
+  .service-icon-1 {
+    width: 82px;
+    height: 82px;
+    margin: 0 auto -2px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .service-1 {
+    width: 270px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    position: relative;
+    transform: translateY(-70px);
+  }
+
+  .service-2 {
+    width: 270px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+    transform: translateY(-77px);
+  }
+
+  .service-3 {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 9;
+    transform: translateY(-190px);
+  }
+
+  .service-4 {
+    width: 220px;
+    height: auto;
+    object-fit: contain;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 9999;
+    transform: translateY(-140px);
+  }
+
+ .swipe-indicator {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 28px;
+    height: 28px;
+    background: url('data:image/svg+xml;utf8,<svg fill="%23222" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.12 4.71a1 1 0 0 1 1.41 0L16 11.17l-6.47 6.46a1 1 0 0 1-1.41-1.41L13.17 12 8.12 6.12a1 1 0 0 1 0-1.41z"/></svg>') no-repeat center;
+    background-size: contain;
+    opacity: 0.4;
+    animation: swipeHint 1.5s infinite ease-in-out;
+    z-index: 5;
+  }
+ @keyframes swipeHint {
+    0% { transform: translateX(-50%) translateX(0); opacity: 0.4; }
+    50% { transform: translateX(-50%) translateX(10px); opacity: 0.8; }
+    100% { transform: translateX(-50%) translateX(0); opacity: 0.4; }
+  }
+ 
+}
+
+@media (min-width: 769px) {
+.services-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+  align-items: center;
+    gap: 40px;
+ 
+    margin-left: auto;
+    margin-right: auto;
+
+  transform: translateY(190px);
+  }
+  .service-card {
+    display: block !important;
+    opacity: 1 !important;
+    background: none;
+    padding: 0 10px;
+     
+  }
+
+  .service-card {
+    display: block !important;
+    opacity: 1 !important;
+    background: none;
+    padding: 0 10px;
+  }
+
+  .service-1 {
+    width: 200px;
+    transform: translateY(-34px);
+  }
+
+  .service-2 {
+    width: 230px;
+    transform: translateY(-48px);
+  }
+
+  .service-3 {
+    width: 120px;
+    transform: translateY(-56px);
+  }
+
+  .service-4 {
+    width: 140px;
+    transform: translateY(-56px);
+  }
+}
