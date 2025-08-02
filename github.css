@@ -1,0 +1,283 @@
+
+   /* ======= Reset & Base ======= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ======= Layout ======= */
+header,
+footer {
+  background-color: #2f2f2f;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+main {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 0 30px;
+}
+section {
+  margin-top: 40px;
+}
+
+/* ======= Typography ======= */
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #aa0000;
+}
+p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+strong {
+  color: #222;
+  font-weight: bold;
+}
+
+/* ======= Links ======= */
+a {
+  color: #aa0000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+a:hover {
+  text-decoration: underline;
+  color: #d40000;
+}
+
+/* ======= List Style (optionnel si tu ajoutes des <ul>) ======= */
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+ul li {
+  margin-bottom: 10px;
+}
+ul li::before {
+  content: "→ ";
+  color: #aa0000;
+}
+
+/* ======= Image Styling (si tu ajoutes des images plus tard) ======= */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* ======= Footer ======= */
+footer {
+  font-size: 0.9em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  background-color: #2f2f2f;
+  padding: 20px 10px;
+}
+
+/* ======= SEO Friendly Highlight (liens vers la-ferronnerie-artisanale) ======= */
+a[href*="la-ferronnerie-artisanale.html"] {
+  font-weight: bold;
+  color: #aa0000;
+  background-color: #fff3f3;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+input[type="submit"] {
+  background-color: #aa0000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: #d40000;
+}
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+   a.button, a.btn, a.read-more {
+    text-decoration: none !important;
+}
+
+
+.top-bar {
+    background: $darkcolor;
+    border-top: 3px solid $maincolor;
+}
+.top-bar-wrapper {
+    position: relative;
+    min-height: 40px;
+    color: #0e841b;
+    margin: 0 auto;
+}
+.top-header-date {
+    font-size: 12px;
+}
+.top-bar-social {
+    float: left;
+    padding: 5px 0;
+}
+.top-bar-social li {
+    display: inline;
+    padding: 0;
+    float: left;
+    margin-right: 5px;
+}
+.top-bar-social .widget ul {
+    padding: 0;
+}
+.top-bar-social .LinkList ul {
+    text-align: center;
+    margin: 0;
+}
+.top-bar-social #social a {
+    display: block;
+    width: 40px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 25px;
+    color: #000;
+    transition: background 0.3s linear;
+    -moz-transition: background 0.3s linear;
+    -webkit-transition: background 0.3s linear;
+    -o-transition: background 0.3s linear;
+}
+.top-bar-social #social a:before {
+    display: inline-block;
+    font: normal normal normal 22px/1 FontAwesome;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.top-bar-social .bloglovin:before {
+    content: "\f004"}
+.top-bar-social .facebook:before {
+    content: "\f09a"}
+.top-bar-social .twitter:before {
+    content: "\f099"}
+.top-bar-social .gplus:before {
+    content: "\f0d5"}
+.top-bar-social .rss:before {
+    content: "\f09e"}
+.top-bar-social .youtube:before {
+    content: "\f167"}
+.top-bar-social .skype:before {
+    content: "\f17e"}
+.top-bar-social .stumbleupon:before {
+    content: "\f1a4"}
+.top-bar-social .tumblr:before {
+    content: "\f173"}
+.top-bar-social .vine:before {
+    content: "\f1ca"}
+.top-bar-social .stack-overflow:before {
+    content: "\f16c"}
+.top-bar-social .linkedin:before {
+    content: "\f0e1"}
+.top-bar-social .dribbble:before {
+    content: "\f17d"}
+.top-bar-social .soundcloud:before {
+    content: "\f1be"}
+.top-bar-social .behance:before {
+    content: "\f1b4"}
+.top-bar-social .digg:before {
+    content: "\f1a6"}
+.top-bar-social .instagram:before {
+    content: "\f16d"}
+.top-bar-social .pinterest:before {
+    content: "\f0d2"}
+.top-bar-social .delicious:before {
+    content: "\f1a5"}
+.top-bar-social .codepen:before {
+    content: "\f1cb"}
+.top-bar-social #social a.bloglovin:hover {
+    color: $maincolor;
+}
+.top-bar-social #social a.facebook:hover {
+    color: #3b5998;
+}
+.top-bar-social #social a.twitter:hover {
+    color: #00aced;
+}
+.top-bar-social #social a.gplus:hover {
+    color: #df4b37;
+}
+.top-bar-social #social a.rss:hover {
+    color: #f26522;
+}
+.top-bar-social #social a.youtube:hover {
+    color: #cd201f;
+}
+.top-bar-social #social a.skype:hover {
+    color: #00aff0;
+}
+.top-bar-social #social a.stumbleupon:hover {
+    color: #eb4924;
+}
+.top-bar-social #social a.tumblr:hover {
+    color: #35465c;
+}
+.top-bar-social #social a.vine:hover {
+    color: #00b488;
+}
+.top-bar-social #social a.stack-overflow:hover {
+    color: #f48024;
+}
+.top-bar-social #social a.linkedin:hover {
+    color: #0077b5;
+}
+.top-bar-social #social a.dribbble:hover {
+    color: #ea4c89;
+}
+.top-bar-social #social a.soundcloud:hover {
+    color: #ff3300;
+}
+.top-bar-social #social a.behance:hover {
+    color: #1769ff;
+}
+.top-bar-social #social a.digg:hover {
+    color: #005be2;
+}
+.top-bar-social #social a.instagram:hover {
+    color: #c13584;
+}
+.top-bar-social #social a.pinterest:hover {
+    color: #bd081c;
+}
+.top-bar-social #social a.delicious:hover {
+    color: #3399ff;
+}
+.top-bar-social #social a.codepen:hover {
+    color: #47cf73;
+}
